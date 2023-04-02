@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Epic guitar" modversion="1.0.9" corepackage="False"  gameversion="0.19.14.0" altnames="CustomAccordion" >
+	<Item file="%ModDir%/CustomGuitar.xml" />
+	<Item file="%ModDir%/CustomNote.xml" />
+	<Item file="%ModDir%/CustomSong.xml" />
+
+</contentpackage>
