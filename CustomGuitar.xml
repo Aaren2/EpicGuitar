@@ -44,6 +44,49 @@
 				<input name="set_state" displayname="connection.setstate" />
 			</ConnectionPanel>
 		</Item>
+		<Item name="Epic alarmbuzzer" identifier="epicalarmbuzzer" category="Electrical" Tags="smallitem,sound,container, accordion" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+			<Price baseprice="150" minleveldifficulty="5">
+				<Price storeidentifier="merchantoutpost" />
+				<Price storeidentifier="merchantcity" sold="false"/>
+				<Price storeidentifier="merchantresearch" multiplier="1.25" />
+				<Price storeidentifier="merchantmilitary" />
+				<Price storeidentifier="merchantmine" />
+				<Price storeidentifier="merchantengineering" multiplier="0.9" />
+			</Price>
+			<PreferredContainer primary="engcab"/>
+			<PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+			<Deconstruct time="10">
+				<Item identifier="plastic" />
+				<Item identifier="copper" />
+				<Item identifier="steel" />
+			</Deconstruct>
+			<Fabricate suitablefabricators="fabricator" requiredtime="10">
+				<RequiredSkill identifier="electrical" level="30" />
+				<RequiredItem identifier="fpgacircuit" />
+				<RequiredItem identifier="steel" />
+			</Fabricate>
+			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,127,64,64" origin="0.5,0.5" />
+			<Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="221,138,42,57" origin="0.5,0.5" />
+			<Body width="40" height="22" density="12" />
+			<Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+				<RequiredItem items="wrench" type="Equipped" />
+			</Holdable>
+			<LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="0.68" range="20">
+				<StatusEffect type="OnActive" targettype="Contained">
+					<Conditional hastag="eq notes" />
+					<Use />
+				</StatusEffect>
+			</LightComponent>
+			<ItemContainer capacity="1" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+				<Containable items="notes" />
+			</ItemContainer>
+			<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+				<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+				<RequiredItem items="screwdriver" type="Equipped" />
+				<input name="toggle" displayname="connection.togglestate" />
+				<input name="set_state" displayname="connection.setstate" />
+			</ConnectionPanel>
+		</Item>
 		<Item name="Epic guitar" identifier="epicaguitar" category="Misc" Tags="smallitem, accordion" scale="0.5" description="Require notes to play music" price="300" impactsoundtag="impact_metal_light" isshootable="true">
 			<Price baseprice="50">
 				<Price storeidentifier="merchantoutpost" minavailable="1" />

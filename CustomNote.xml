@@ -1,5 +1,1544 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
+	<!--Вторая часть-->
+	<!--Папаша-->
+
+	<Item name = "song-Flare" identifier = "song-Flare" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/FlarePic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/FlarePic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Flare.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-WatchTheWorldBurn" identifier = "song-WatchTheWorldBurn" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/WatchTheWorldBurnPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/WatchTheWorldBurnPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/WatchTheWorldBurn.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Demons" identifier = "song-Demons" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/DemonsPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/DemonsPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Demons.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ItsJustABurningMemory432Hz" identifier = "song-ItsJustABurningMemory432Hz" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ItsJustABurningMemory432HzPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ItsJustABurningMemory432HzPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ItsJustABurningMemory432Hz.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Razormind" identifier = "song-Razormind" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/RazormindPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/RazormindPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Razormind.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Step-Grandma" identifier = "song-Step-Grandma" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Step-GrandmaPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Step-GrandmaPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Step-Grandma.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-TheWeekend" identifier = "song-TheWeekend" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/TheWeekendPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/TheWeekendPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/TheWeekend.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-WillBeFine" identifier = "song-WillBeFine" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/WillBeFinePic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/WillBeFinePic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/WillBeFine.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Wishmaster" identifier = "song-Wishmaster" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/WishmasterPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/WishmasterPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Wishmaster.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-БеспонтовыйПирожок" identifier = "song-БеспонтовыйПирожок" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/БеспонтовыйПирожокPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/БеспонтовыйПирожокPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/БеспонтовыйПирожок.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ВоВремяДождя" identifier = "song-ВоВремяДождя" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ВоВремяДождяPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ВоВремяДождяPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ВоВремяДождя.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Зло" identifier = "song-Зло" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЗлоPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЗлоPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Зло.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Злыдень2000" identifier = "song-Злыдень2000" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Злыдень2000Pic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Злыдень2000Pic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Злыдень2000.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Лето" identifier = "song-Лето" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЛетоPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЛетоPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Лето.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-НовыйРусскийПират" identifier = "song-НовыйРусскийПират" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/НовыйРусскийПиратPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/НовыйРусскийПиратPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/НовыйРусскийПират.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Снова" identifier = "song-Снова" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/СноваPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/СноваPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Снова.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Шут" identifier = "song-Шут" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ШутPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ШутPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Шут.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-DJElectrohead" identifier = "song-DJElectrohead" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/DJElectroheadPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/DJElectroheadPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/DJElectrohead.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-NURSIK1337-CANTINABOY" identifier = "song-NURSIK1337-CANTINABOY" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/NURSIK1337-CANTINABOYPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/NURSIK1337-CANTINABOYPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/NURSIK1337-CANTINABOY.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-OTVINTA" identifier = "song-OTVINTA" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/OTVINTAPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/OTVINTAPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/OTVINTA.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ВсеБудетХорошо" identifier = "song-ВсеБудетХорошо" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ВсеБудетХорошоPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ВсеБудетХорошоPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ВсеБудетХорошо.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Фейерверк" identifier = "song-Фейерверк" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ФейерверкPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ФейерверкPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Фейерверк.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Тяги" identifier = "song-Тяги" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ТягиPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ТягиPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Тяги.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<!--Андрей-->
+
+	<Item name = "song-KidsWithGuns" identifier = "song-KidsWithGuns" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/KidsWithGunsPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/KidsWithGunsPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/KidsWithGuns.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-OnMelancholyHill" identifier = "song-OnMelancholyHill" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/OnMelancholyHillPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/OnMelancholyHillPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/OnMelancholyHill.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ЕслиБылоМореПива" identifier = "song-ЕслиБылоМореПива" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЕслиБылоМореПиваPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЕслиБылоМореПиваPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ЕслиБылоМореПива.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Магадан" identifier = "song-Магадан" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/МагаданPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/МагаданPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Магадан.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Мама-анархия" identifier = "song-Мама-анархия" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Мама-анархияPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Мама-анархияPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Мама-анархия.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ТрассаЕ-95" identifier = "song-ТрассаЕ-95" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ТрассаЕ-95Pic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ТрассаЕ-95Pic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ТрассаЕ-95.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<!--Макс-->
+
+	<Item name = "song-BreachTheHex" identifier = "song-BreachTheHex" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/BreachTheHexPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/BreachTheHexPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/BreachTheHex.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-ComingInHot" identifier = "song-ComingInHot" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ComingInHotPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ComingInHotPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/ComingInHot.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-DustbowlDannyTheme" identifier = "song-DustbowlDannyTheme" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/DustbowlDannyThemePic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/DustbowlDannyThemePic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/DustbowlDannyTheme.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Escape" identifier = "song-Escape" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/EscapePic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/EscapePic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Escape.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-INTHEKOMAROVO" identifier = "song-INTHEKOMAROVO" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/INTHEKOMAROVOPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/INTHEKOMAROVOPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/INTHEKOMAROVO.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-RVNTHEMOON" identifier = "song-RVNTHEMOON" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/RVNTHEMOONPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/RVNTHEMOONPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/RVNTHEMOON.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-Screamer" identifier = "song-Screamer" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ScreamerPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ScreamerPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/Screamer.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<Item name = "song-SexualWitches" identifier = "song-SexualWitches" category = "Misc" Tags = "song" >
+		<Sprite texture = "%ModDir%/Songs/SongIcon/SexualWitchesPic.jpg" depth = "0.8" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<Body width = "48" height = "48"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/SexualWitchesPic.jpg" sourcerect = "0,160,4,4" origin = "0.5,0.5"/>
+		<ItemComponent >
+			<StatusEffect type = "OnUse" targettype = "Parent" >
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<sound file = "%ModDir%/Songs/SongFile/SexualWitches.ogg" type = "OnUse" loop = "true" volume = "1"/>
+			</StatusEffect>
+			<StatusEffect type = "OnUse" targettype = "This" >
+				<Conditional condition = "lt 60" targetcontainer = "true"/>
+				<Remove/>
+			</StatusEffect>
+		</ItemComponent>
+	</Item>
+
+
+	<!--Дима-->
+	<Item name ="яя АААААТ" identifier = "notes-АААААТ" category = "Misc" Tags = "notes" scale = "0.5" description = "АААААТ" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/АААААТPic.jpg" sourcerect = "0,0,603,601" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/АААААТPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-АААААТ" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя БелаяНочьЧерниковскаяХата" identifier = "notes-БелаяНочьЧерниковскаяХата" category = "Misc" Tags = "notes" scale = "0.5" description = "БелаяНочьЧерниковскаяХата" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/БелаяНочьЧерниковскаяХатаPic.jpg" sourcerect = "0,0,499,499" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/БелаяНочьЧерниковскаяХатаPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-БелаяНочьЧерниковскаяХата" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя ВечерТоНе" identifier = "notes-ВечерТоНе" category = "Misc" Tags = "notes" scale = "0.5" description = "ВечерТоНе" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ВечерТоНеPic.jpg" sourcerect = "0,0,930,629" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ВечерТоНеPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ВечерТоНе" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя ВсталБыстро" identifier = "notes-ВсталБыстро" category = "Misc" Tags = "notes" scale = "0.5" description = "ВсталБыстро" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ВсталБыстроPic.jpg" sourcerect = "0,0,999,648" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ВсталБыстроPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ВсталБыстро" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя КогдаМыБылиНаВойне" identifier = "notes-КогдаМыБылиНаВойне" category = "Misc" Tags = "notes" scale = "0.5" description = "КогдаМыБылиНаВойне" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/КогдаМыБылиНаВойнеPic.jpg" sourcerect = "0,0,930,629" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/КогдаМыБылиНаВойнеPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-КогдаМыБылиНаВойне" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя Партизанская" identifier = "notes-Партизанская" category = "Misc" Tags = "notes" scale = "0.5" description = "Партизанская" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ПартизанскаяPic.jpg" sourcerect = "0,0,1452,1079" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ПартизанскаяPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Партизанская" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя Сибиряки" identifier = "notes-Сибиряки" category = "Misc" Tags = "notes" scale = "0.5" description = "Сибиряки" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/СибирякиPic.jpg" sourcerect = "0,0,1279,897" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/СибирякиPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Сибиряки" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя СонКупца" identifier = "notes-СонКупца" category = "Misc" Tags = "notes" scale = "0.5" description = "СонКупца" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/СонКупцаPic.jpg" sourcerect = "0,0,731,1023" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/СонКупцаPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-СонКупца" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя ТанецРыцарей" identifier = "notes-ТанецРыцарей" category = "Misc" Tags = "notes" scale = "0.5" description = "ТанецРыцарей" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ТанецРыцарейPic.jpg" sourcerect = "0,0,965,999" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ТанецРыцарейPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ТанецРыцарей" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя ЧёрныеПтицы" identifier = "notes-ЧёрныеПтицы" category = "Misc" Tags = "notes" scale = "0.5" description = "ЧёрныеПтицы" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЧёрныеПтицыPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЧёрныеПтицыPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ЧёрныеПтицы" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя Щелкунчик" identifier = "notes-Щелкунчик" category = "Misc" Tags = "notes" scale = "0.5" description = "Щелкунчик" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЩелкунчикPic.jpg" sourcerect = "0,0,319,179" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЩелкунчикPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Щелкунчик" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+	<!--Бояра-->
+	<Item name ="яя 8минут" identifier = "notes-8минут" category = "Misc" Tags = "notes" scale = "0.5" description = "8минут" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/8минутPic.jpg" sourcerect = "0,0,1919,1274" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/8минутPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-8минут" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя Bismarck" identifier = "notes-Bismarck" category = "Misc" Tags = "notes" scale = "0.5" description = "Bismarck" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/BismarckPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/BismarckPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Bismarck" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя BismarckRightVersion" identifier = "notes-BismarckRightVersion" category = "Misc" Tags = "notes" scale = "0.5" description = "BismarckRightVersion" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/BismarckRightVersionPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/BismarckRightVersionPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-BismarckRightVersion" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя SongOfTheAncients" identifier = "notes-SongOfTheAncients" category = "Misc" Tags = "notes" scale = "0.5" description = "SongOfTheAncients" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/SongOfTheAncientsPic.jpg" sourcerect = "0,0,499,499" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/SongOfTheAncientsPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-SongOfTheAncients" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя WeAllLiftTogether" identifier = "notes-WeAllLiftTogether" category = "Misc" Tags = "notes" scale = "0.5" description = "WeAllLiftTogether" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/WeAllLiftTogetherPic.jpg" sourcerect = "0,0,719,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/WeAllLiftTogetherPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-WeAllLiftTogether" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя YellowSubmarine" identifier = "notes-YellowSubmarine" category = "Misc" Tags = "notes" scale = "0.5" description = "YellowSubmarine" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/YellowSubmarinePic.jpg" sourcerect = "0,0,1299,1299" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/YellowSubmarinePic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-YellowSubmarine" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яя Скрипка-Лиса" identifier = "notes-Скрипка-Лиса" category = "Misc" Tags = "notes" scale = "0.5" description = "Скрипка-Лиса" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Скрипка-ЛисаPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Скрипка-ЛисаPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Скрипка-Лиса" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+	<!--Тапок-->
+	<Item name ="яяа Цусима" identifier = "notes-Цусима" category = "Misc" Tags = "notes" scale = "0.5" description = "Цусима" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЦусимаPic.jpg" sourcerect = "0,0,299,299" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЦусимаPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Цусима" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа БитваЗаМоскву" identifier = "notes-БитваЗаМоскву" category = "Misc" Tags = "notes" scale = "0.5" description = "БитваЗаМоскву" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/БитваЗаМосквуPic.jpg" sourcerect = "0,0,299,299" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/БитваЗаМосквуPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-БитваЗаМоскву" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа Высота776" identifier = "notes-Высота776" category = "Misc" Tags = "notes" scale = "0.5" description = "Высота776" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Высота776Pic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Высота776Pic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Высота776" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа ГвардияПетра" identifier = "notes-ГвардияПетра" category = "Misc" Tags = "notes" scale = "0.5" description = "ГвардияПетра" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ГвардияПетраPic.jpg" sourcerect = "0,0,299,299" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ГвардияПетраPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ГвардияПетра" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа ОперацияСоюзнаяСила" identifier = "notes-ОперацияСоюзнаяСила" category = "Misc" Tags = "notes" scale = "0.5" description = "ОперацияСоюзнаяСила" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ОперацияСоюзнаяСилаPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ОперацияСоюзнаяСилаPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ОперацияСоюзнаяСила" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа Халкин-Гол" identifier = "notes-Халкин-Гол" category = "Misc" Tags = "notes" scale = "0.5" description = "Халкин-Гол" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/Халкин-ГолPic.jpg" sourcerect = "0,0,319,179" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/Халкин-ГолPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Халкин-Гол" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа МяснойБор" identifier = "notes-МяснойБор" category = "Misc" Tags = "notes" scale = "0.5" description = "МяснойБор" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/МяснойБорPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/МяснойБорPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-МяснойБор" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа ПесньПустыни" identifier = "notes-ПесньПустыни" category = "Misc" Tags = "notes" scale = "0.5" description = "ПесньПустыни" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ПесньПустыниPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ПесньПустыниPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ПесньПустыни" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа Петропавловск" identifier = "notes-Петропавловск" category = "Misc" Tags = "notes" scale = "0.5" description = "Петропавловск" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ПетропавловскPic.jpg" sourcerect = "0,0,299,299" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ПетропавловскPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-Петропавловск" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа ЧерныйОктябрь" identifier = "notes-ЧерныйОктябрь" category = "Misc" Tags = "notes" scale = "0.5" description = "ЧерныйОктябрь" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЧерныйОктябрьPic.jpg" sourcerect = "0,0,1279,719" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЧерныйОктябрьPic-50.jpg" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ЧерныйОктябрь" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+	<Item name ="яяа ЖизньЗаЦаря" identifier = "notes-ЖизньЗаЦаря" category = "Misc" Tags = "notes" scale = "0.5" description = "ЖизньЗаЦаря" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
+		<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
+		<InventoryIcon texture = "%ModDir%/Songs/SongIcon/ЖизньЗаЦаряPic.png" sourcerect = "0,0,1199,1199" origin = "0.5,0.5"/>
+		<Sprite texture = "%ModDir%/Songs/SongIcon/ЖизньЗаЦаряPic-50.png" sourcerect = "0,0,49,49" depth = "0.55" origin = "0.5,0.5"/>
+		<Body width = "50" height = "50" density = "12"/>
+		<Fabricate suitablefabricators = "fabricator" requiredtime = "1">
+			<RequiredItem identifier = "notes-blank"/>
+		</Fabricate>
+		<Deconstruct time = "1">
+			<Item identifier = "notes-blank"/>
+		</Deconstruct>
+		<Holdable slots = "Any, RightHand, LeftHand" msg = "ItemMsgPickUpSelect"/>
+		<ItemContainer hideitems = "true" capacity = "1" drawinventory = "false" canbeselected = "false" canbecombined = "true" removecontaineditemsondeconstruct = "true">
+			<StatusEffect type = "OnUse" targettype = "Contained">
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "50" setvalue = "true">
+				<Conditional hastag = "!eq accordion" targetcontainer = "true"/>
+				<Use/>
+			</StatusEffect>
+			<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
+				<Conditional hastag = "eq accordion" targetcontainer = "true"/>
+				<SpawnItem identifiers = "song-ЖизньЗаЦаря" spawnposition = "ThisInventory"/>
+			</StatusEffect>
+			<StatusEffect type = "OnNotContained" targettype = "Contained">
+				<Remove/>
+			</StatusEffect>
+			<Containable items = "song"/>
+		</ItemContainer>
+	</Item>
+
+
+
+	<!--Первая часть-->
 	<Items>
 		<Item name ="яя NoAngel" identifier = "notes-NoAngel" category = "Misc" Tags = "notes" scale = "0.5" description = "NoAngel" price = "1" impactsoundtag = "impact_metal_light" isshootable = "true" HideConditionBar = "true" showcontainedstateindicator = "false">
 			<Upgrade gameversion = "0.9.2.0" scale = "0.5"/>
