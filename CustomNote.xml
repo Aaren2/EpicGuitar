@@ -5943,7 +5943,7 @@
 				</StatusEffect>
 				<StatusEffect type = "OnContained" targettype = "This" condition = "100" setvalue = "true">
 					<Conditional hastag = "eq accordion" targetcontainer = "true"/>
-					<SpawnItem identifiers = "song-DarlSouls" spawnposition = "ThisInventory"/>
+					<SpawnItem identifiers = "song-DarkSouls" spawnposition = "ThisInventory"/>
 				</StatusEffect>
 				<StatusEffect type = "OnNotContained" targettype = "Contained">
 					<Remove/>
